@@ -2307,277 +2307,223 @@ TeleQ.Text = "God Mode [sélection]"
 TeleQ.TextColor3 = Color3.fromRGB(0, 0, 0)
 TeleQ.TextSize = 14.000
 TeleQ.MouseButton1Down:connect(function()
--- Madcity Godmode Server
+--[[
+	 Gui to Lua Converter
+-- Revamped by:HoIyScript
+--]]
 
 
-game:GetService("StarterGui"):SetCore("SendNotification", {
-  Title = "Charement du script Gui...",
-  Text = "Script Connected By Pulco!"
-})
+
 -- Instances:
-local SpeedyDevs = Instance.new("ScreenGui")
-local main = Instance.new("ImageLabel")
-local credits = Instance.new("TextLabel")
-local header = Instance.new("Frame")
-local headers = Instance.new("TextLabel")
-local headerstuff = Instance.new("Frame")
-local headerpeddy = Instance.new("TextLabel")
-local closeuwu = Instance.new("ImageLabel")
-local b_teleport = Instance.new("TextButton")
-local b_autorob = Instance.new("TextButton")
-local b_infammo = Instance.new("TextButton")
-local b_stuff = Instance.new("TextButton")
-local b_xpfarm = Instance.new("TextButton")
-local b_autoarrest = Instance.new("TextButton")
-local tps = Instance.new("ImageLabel")
-local tpheaders = Instance.new("Frame")
-local tpheaderstuff = Instance.new("Frame")
-local tpheader = Instance.new("TextLabel")
-local b_coptp = Instance.new("TextButton")
-local b_crimtp = Instance.new("TextButton")
---Properties:
-SpeedyDevs.Name = "SpeedyDevs"
-SpeedyDevs.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-SpeedyDevs.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-SpeedyDevs.ResetOnSpawn = false
 
-main.Name = "main"
-main.Parent = SpeedyDevs
-main.BackgroundColor3 = Color3.new(1, 1, 1)
-main.BackgroundTransparency = 1
-main.BorderColor3 = Color3.new(0.172549, 0.184314, 0.2)
-main.BorderSizePixel = 5
-main.Position = UDim2.new(0.0974833891, 0, 0.503685534, 0)
-main.Size = UDim2.new(0, 244, 0, 247)
-main.Image = "rbxassetid://2260429633"
-main.ImageColor3 = Color3.new(0.172549, 0.184314, 0.2)
-main.ScaleType = Enum.ScaleType.Slice
-main.SliceCenter = Rect.new(12, 12, 13, 13)
-main.Active = true
-main.Draggable = true
-
-credits.Name = "credits"
-credits.Parent = main
-credits.BackgroundColor3 = Color3.new(1, 1, 1)
-credits.BackgroundTransparency = 1
-credits.BorderSizePixel = 0
-credits.Position = UDim2.new(0.0901639313, 0, 0.866330087, 0)
-credits.Size = UDim2.new(0, 200, 0, 20)
-credits.Font = Enum.Font.Highway
-credits.Text = "Created by Pulco#6833 / Pulco Devs Owner"
-credits.TextColor3 = Color3.new(1, 1, 1)
-credits.TextSize = 12
-
-header.Name = "header"
-header.Parent = main
-header.BackgroundColor3 = Color3.new(0.137255, 0.152941, 0.164706)
-header.BorderColor3 = Color3.new(0.172549, 0.184314, 0.2)
-header.BorderSizePixel = 0
-header.Position = UDim2.new(-0.00171507895, 0, -0.00625565648, 0)
-header.Size = UDim2.new(0, 244, 0, 27)
-
-headers.Name = "headers"
-headers.Parent = header
-headers.BackgroundColor3 = Color3.new(1, 1, 1)
-headers.BackgroundTransparency = 1
-headers.BorderSizePixel = 0
-headers.Position = UDim2.new(-0.0656557083, 0, 0, 0)
-headers.Size = UDim2.new(0, 200, 0, 27)
-headers.Font = Enum.Font.Highway
-headers.Text = "P"
-headers.TextColor3 = Color3.new(1, 0, 0)
-headers.TextScaled = true
-headers.TextSize = 14
-headers.TextWrapped = true
-
-headerstuff.Name = "headerstuff"
-headerstuff.Parent = header
-headerstuff.BackgroundColor3 = Color3.new(1, 1, 1)
-headerstuff.BorderSizePixel = 0
-headerstuff.Position = UDim2.new(0, 0, 1, 0)
-headerstuff.Size = UDim2.new(0, 244, 0, 4)
-
-headerpeddy.Name = "headerpeddy"
-headerpeddy.Parent = header
-headerpeddy.BackgroundColor3 = Color3.new(1, 1, 1)
-headerpeddy.BackgroundTransparency = 1
-headerpeddy.Position = UDim2.new(0.0942623019, 0, 0, 0)
-headerpeddy.Size = UDim2.new(0, 200, 0, 27)
-headerpeddy.Font = Enum.Font.Highway
-headerpeddy.Text = "ulco    "
-headerpeddy.TextColor3 = Color3.new(1, 1, 1)
-headerpeddy.TextScaled = true
-headerpeddy.TextSize = 14
-headerpeddy.TextWrapped = true
-
-closeuwu.Name = "close uwu"
-closeuwu.Parent = header
-closeuwu.BackgroundColor3 = Color3.new(1, 1, 1)
-closeuwu.BackgroundTransparency = 1
-closeuwu.Position = UDim2.new(0.86475414, 0, 0, 0)
-closeuwu.Size = UDim2.new(0, 33, 0, 31)
-closeuwu.Image = "rbxassetid://1312007357"
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Frame_2 = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame2 = Instance.new("Frame")
+local TextButton_10 = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
 
 
+--[[
+	Properties:
+--]]
 
-b_autorob.Name = "b_autorob"
-b_autorob.Parent = main
-b_autorob.BackgroundColor3 = Color3.new(0.447059, 0.537255, 0.854902)
-b_autorob.BorderColor3 = Color3.new(0.137255, 0.152941, 0.164706)
-b_autorob.BorderSizePixel = 5
-b_autorob.Position = UDim2.new(0.0901635513, 0, 0.452915579, 0)
-b_autorob.Size = UDim2.new(0, 90, 0, 22)
-b_autorob.Font = Enum.Font.Highway
-b_autorob.Text = "God mode [ALL]"
-b_autorob.TextColor3 = Color3.new(1, 1, 1)
-b_autorob.TextScaled = true
-b_autorob.TextSize = 14
-b_autorob.TextWrapped = true
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
-b_infammo.Name = "b_infammo"
-b_infammo.Parent = main
-b_infammo.BackgroundColor3 = Color3.new(0.447059, 0.537255, 0.854902)
-b_infammo.BorderColor3 = Color3.new(0.137255, 0.152941, 0.164706)
-b_infammo.BorderSizePixel = 5
-b_infammo.Position = UDim2.new(0.0901635885, 0, 0.224680662, 0)
-b_infammo.Size = UDim2.new(0, 90, 0, 22)
-b_infammo.Font = Enum.Font.Highway
-b_infammo.Text = "God Mode"
-b_infammo.TextColor3 = Color3.new(1, 1, 1)
-b_infammo.TextScaled = true
-b_infammo.TextSize = 14
-b_infammo.TextWrapped = true
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0383211672, 0, 0.0656063631, 0)
+Frame.Size = UDim2.new(0.0994525552, 0, 0.0337972157, 0)
+Frame.Active = true
+Frame.Draggable = true
 
-b_stuff.Name = "b_stuff"
-b_stuff.Parent = main
-b_stuff.BackgroundColor3 = Color3.new(0.447059, 0.537255, 0.854902)
-b_stuff.BorderColor3 = Color3.new(0.137255, 0.152941, 0.164706)
-b_stuff.BorderSizePixel = 5
-b_stuff.Position = UDim2.new(0.536885381, 0, 0.222146332, 0)
-b_stuff.Size = UDim2.new(0, 90, 0, 22)
-b_stuff.Font = Enum.Font.Highway
-b_stuff.Text = "remove"
-b_stuff.TextColor3 = Color3.new(1, 1, 1)
-b_stuff.TextScaled = true
-b_stuff.TextSize = 14
-b_stuff.TextWrapped = true
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton.BackgroundTransparency = 1
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.854838729, 0, 0, 0)
+TextButton.Size = UDim2.new(0.145161286, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.new(1, 1, 1)
+TextButton.TextScaled = true
+TextButton.TextSize = 14
+TextButton.TextWrapped = true
 
-b_xpfarm.Name = "b_xpfarm"
-b_xpfarm.Parent = main
-b_xpfarm.BackgroundColor3 = Color3.new(0.447059, 0.537255, 0.854902)
-b_xpfarm.BorderColor3 = Color3.new(0.137255, 0.152941, 0.164706)
-b_xpfarm.BorderSizePixel = 5
-b_xpfarm.Position = UDim2.new(0.540983737, 0, 0.452915549, 0)
-b_xpfarm.Size = UDim2.new(0, 90, 0, 22)
-b_xpfarm.Font = Enum.Font.Highway
-b_xpfarm.Text = "Remove [ALL]"
-b_xpfarm.TextColor3 = Color3.new(1, 1, 1)
-b_xpfarm.TextScaled = true
-b_xpfarm.TextSize = 14
-b_xpfarm.TextWrapped = true
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.Font = Enum.Font.SourceSansLight
+TextLabel.Text = "Main"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
 
-b_autoarrest.Name = "b_autoarrest"
-b_autoarrest.Parent = main
-b_autoarrest.BackgroundColor3 = Color3.new(0.447059, 0.537255, 0.854902)
-b_autoarrest.BorderColor3 = Color3.new(0.137255, 0.152941, 0.164706)
-b_autoarrest.BorderSizePixel = 5
-b_autoarrest.Position = UDim2.new(0.0901641846, 0, 0.68217051, 0)
-b_autoarrest.Size = UDim2.new(0, 90, 0, 22)
-b_autoarrest.Font = Enum.Font.Highway
-b_autoarrest.Text = "Invisible"
-b_autoarrest.TextColor3 = Color3.new(1, 1, 1)
-b_autoarrest.TextScaled = true
-b_autoarrest.TextSize = 14
-b_autoarrest.TextWrapped = true
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+Frame_2.BorderColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 1.00900004, 0)
+Frame_2.Size = UDim2.new(1, 0, 6.1800001, 0)
 
-tps.Name = "tps"
-tps.Parent = SpeedyDevs
-tps.BackgroundColor3 = Color3.new(1, 1, 1)
-tps.BackgroundTransparency = 1
-tps.BorderColor3 = Color3.new(0.172549, 0.184314, 0.2)
-tps.BorderSizePixel = 5
-tps.Position = UDim2.new(0.265840322, 0, 0.501228452, 0)
-tps.Size = UDim2.new(0, 116, 0, 152)
-tps.Visible = false
-tps.Image = "rbxassetid://2260429633"
-tps.ImageColor3 = Color3.new(0.666667, 0, 0)
-tps.ScaleType = Enum.ScaleType.Slice
-tps.SliceCenter = Rect.new(12, 12, 13, 13)
-tps.Active = true
-tps.Draggable = true
+TextButton_2.Parent = Frame_2
+TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_2.BackgroundTransparency = 1
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0, 0, 0.0272358228, 0)
+TextButton_2.Size = UDim2.new(1, 0, 0.124845669, 0)
+TextButton_2.Font = Enum.Font.SourceSansLight
+TextButton_2.Text = "God Mode"
+TextButton_2.TextColor3 = Color3.new(1, 1, 1)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 16
+TextButton_2.TextWrapped = true
 
-tpheaders.Name = "tpheaders"
-tpheaders.Parent = tps
-tpheaders.BackgroundColor3 = Color3.new(1, 0, 0)
-tpheaders.BorderColor3 = Color3.new(0.172549, 0.184314, 0.2)
-tpheaders.BorderSizePixel = 0
-tpheaders.Position = UDim2.new(-0.00171800691, 0, -0.00625570212, 0)
-tpheaders.Size = UDim2.new(0, 116, 0, 27)
+TextButton_3.Parent = Frame_2
+TextButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_3.BackgroundTransparency = 1
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0, 0, 0.148021415, 0)
+TextButton_3.Size = UDim2.new(1, 0, 0.124845669, 0)
+TextButton_3.Font = Enum.Font.SourceSansLight
+TextButton_3.Text = "Remove"
+TextButton_3.TextColor3 = Color3.new(1, 1, 1)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 16
+TextButton_3.TextWrapped = true
 
-tpheaderstuff.Name = "tpheaderstuff"
-tpheaderstuff.Parent = tpheaders
-tpheaderstuff.BackgroundColor3 = Color3.new(1, 1, 1)
-tpheaderstuff.BorderSizePixel = 0
-tpheaderstuff.Position = UDim2.new(0, 0, 1, 0)
-tpheaderstuff.Size = UDim2.new(0, 116, 0, 4)
+TextButton_4.Parent = Frame_2
+TextButton_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_4.BackgroundTransparency = 1
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0, 0, 0.268807083, 0)
+TextButton_4.Size = UDim2.new(1, 0, 0.124845669, 0)
+TextButton_4.Font = Enum.Font.SourceSansLight
+TextButton_4.Text = "God Mode [ALL]"
+TextButton_4.TextColor3 = Color3.new(1, 1, 1)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 16
+TextButton_4.TextWrapped = true
+
+TextButton_5.Parent = Frame_2
+TextButton_5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_5.BackgroundTransparency = 1
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0, 0, 0.389592737, 0)
+TextButton_5.Size = UDim2.new(1, 0, 0.124845669, 0)
+TextButton_5.Font = Enum.Font.SourceSansLight
+TextButton_5.Text = "Remove [ALL]"
+TextButton_5.TextColor3 = Color3.new(1, 1, 1)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 16
+TextButton_5.TextWrapped = true
+
+TextButton_6.Parent = Frame_2
+TextButton_6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_6.BackgroundTransparency = 1
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0, 0, 0.51037842, 0)
+TextButton_6.Size = UDim2.new(1, 0, 0.124845669, 0)
+TextButton_6.Font = Enum.Font.SourceSansLight
+TextButton_6.Text = "No name"
+TextButton_6.TextColor3 = Color3.new(1, 1, 1)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 16
+TextButton_6.TextWrapped = true
+
+TextButton_7.Parent = Frame_2
+TextButton_7.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_7.BackgroundTransparency = 1
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(0, 0, 0.631163955, 0)
+TextButton_7.Size = UDim2.new(1, 0, 0.124845669, 0)
+TextButton_7.Font = Enum.Font.SourceSansLight
+TextButton_7.Text = ""
+TextButton_7.TextColor3 = Color3.new(1, 1, 1)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 16
+TextButton_7.TextWrapped = true
+
+TextButton_8.Parent = Frame_2
+TextButton_8.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_8.BackgroundTransparency = 1
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Position = UDim2.new(0, 0, 0.751949549, 0)
+TextButton_8.Size = UDim2.new(1, 0, 0.124845669, 0)
+TextButton_8.Font = Enum.Font.SourceSansLight
+TextButton_8.Text = ""
+TextButton_8.TextColor3 = Color3.new(1, 1, 1)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 16
+TextButton_8.TextWrapped = true
+
+TextButton_9.Parent = Frame_2
+TextButton_9.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_9.BackgroundTransparency = 1
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Position = UDim2.new(0, 0, 0.879840255, 0)
+TextButton_9.Size = UDim2.new(1, 0, 0.124845669, 0)
+TextButton_9.Font = Enum.Font.SourceSansLight
+TextButton_9.Text = ""
+TextButton_9.TextColor3 = Color3.new(1, 1, 1)
+TextButton_9.TextScaled = true
+TextButton_9.TextSize = 16
+TextButton_9.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.100000001, 0)
+TextLabel_2.ZIndex = 5
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextSize = 14
 
 
 
-function AutoRob()
-	local cash = workspace.ObjectSelection:GetChildren()
 
-for _,v in pairs(cash) do
-	if v.Name == "CashRegister" and v:FindFirstChild("SmashCash") then
-		local gaycash = v.SmashCash.SmashCash.Event
-		gaycash:FireServer()
-	end
-	if v.Name == "SlotMachine" and v:FindFirstChild("SlotMachine") then
-		local gayslot = v.SlotMachine.SlotMachine.Event
-		gayslot:FireServer()
-	end
-	if v.Name == "ATM" and v:FindFirstChild("ATM") then
-		local gayatm = v.ATM.ATM.Event
-		gayatm:FireServer()
-	end
-	if v.Name == "Safe" and v:FindFirstChild("SmashCash") then
-		local gaysafe = v.SmashCash.SmashCash.Event
-		gaysafe:FireServer()
-	end
-	if v.Name == "Cash" and v:FindFirstChild("Cash") then
-		local bitgaycash = v.Cash.Cash.Event
-		bitgaycash:FireServer()
-	end
-	if v.Name == "TipJar" and v:FindFirstChild("SmashCash") then
-		local bitgayTIPJAR = v.SmashCash.SmashCash.Event
-		bitgayTIPJAR:FireServer()
-	end
-	if v.Name == "TV" and v:FindFirstChild("StealTV") then
-		local bitTV = v.StealTV.StealTV.Event
-		bitTV:FireServer()
-	end
+
+--[[
+	 Scripts:
+--]]
+
+local function DAUB_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "-" then
+			script.Parent.Text = "+"
+			script.Parent.Parent.Frame:TweenSize(UDim2.new(1, 0,0, 0),"In","Quint",0.5)
+		elseif
+			script.Parent.Text == "+" then
+				script.Parent.Text = "-"
+				script.Parent.Parent.Frame:TweenSize(UDim2.new(1, 0,6.15, 0),"Out","Quint",0.5)
+		end
+	end)
 end
-end
+coroutine.wrap(DAUB_fake_script)()
+local function MOBT_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
 
-function AutoArrest()
-local plr = game:GetService("Players").LocalPlayer
-_G.arrest = true
-while _G.arrest do 
-wait()
-for _,v in pairs(game.Teams.Criminals:GetPlayers()) do
-local char = plr.Character.HumanoidRootPart
-char.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,3)
-local Arrest = "Arrest"
-local BitGay = game:GetService("Players")[v.Name]
-local remote = game:GetService("ReplicatedStorage").Event
-wait()
-remote:FireServer(Arrest,BitGay)
-end
-end
-end
-
-
-
-b_infammo.MouseButton1Down:connect(function()
+	script.Parent.MouseButton1Click:Connect(function()
 -- Madcity Godmode (LocalPlayer)
 
 local this_guy_has_godmode = game.Players.LocalPlayer.Name
@@ -2591,9 +2537,33 @@ while _G.God and wait() do
            Event:FireServer(A_1, A_2, A_3)
            end)
 end
-end)
+	end)
+end
+coroutine.wrap(MOBT_fake_script)()
+local function UTMXHAV_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
 
-b_autorob.MouseButton1Down:connect(function()
+	script.Parent.MouseButton1Click:Connect(function()
+-- Madcity Godmode (LocalPlayer)
+
+local this_guy_has_godmode = game.Players.LocalPlayer.Name
+_G.God = false -- On/Off
+while _G.God and wait() do
+       pcall(function()
+           local A_1 = "RevivePlayer"
+           local A_2 = game:GetService("Workspace")[this_guy_has_godmode]
+           local A_3 = game:GetService("Workspace").ObjectSelection.DownedPart.DownedPart
+           local Event = game:GetService("ReplicatedStorage").Event
+           Event:FireServer(A_1, A_2, A_3)
+           end)
+end
+	end)
+end
+coroutine.wrap(UTMXHAV_fake_script)()
+local function HKCZUDL_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
 -- Madcity Godmode Server
 
 local Players = game:GetService("Players")
@@ -2609,10 +2579,38 @@ while wait() and _G.Godserver do
        end
    end)
 end
-end)
+	end)
+end
+coroutine.wrap(HKCZUDL_fake_script)()
+local function NBFTUGO_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
 
-b_autoarrest.MouseButton1Down:connect(function()
-    for _,m in pairs(game:GetService("Workspace"):GetDescendants()) do
+	script.Parent.MouseButton1Click:Connect(function()
+-- Madcity Godmode Server
+
+local Players = game:GetService("Players")
+_G.Godserver = false -- On/Off
+while wait() and _G.Godserver do
+   pcall(function()
+       for i, all in pairs(Players:GetPlayers()) do
+           local A_1 = "RevivePlayer"
+           local A_2 = game:GetService("Workspace")[all.Name]
+           local A_3 = game:GetService("Workspace").ObjectSelection.DownedPart.DownedPart
+           local Event = game:GetService("ReplicatedStorage").Event
+           Event:FireServer(A_1, A_2, A_3)
+       end
+   end)
+end
+	end)
+end
+coroutine.wrap(NBFTUGO_fake_script)()
+local function ZRLV_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+	    
+	       for _,m in pairs(game:GetService("Workspace"):GetDescendants()) do
 if m.ClassName == "TextLabel" then 
 if m.Text == game:GetService("Players").LocalPlayer.Name then
 m:Destroy()
@@ -2634,7 +2632,7 @@ end
 
 while true do
     for i,s in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
-    if s:IsA("Accessory") then
+    if s:IsA("") then
     s.Parent = workspace
     end
     end
@@ -2661,46 +2659,49 @@ while true do
     game.Players.LocalPlayer.Character.Torso.roblox:Remove()
     else
     end
-    game:GetService("RunService").Stepped:wait()
 end
-end)
-
-b_teleport.MouseButton1Down:connect(function()
-
-end)
-
-b_xpfarm.MouseButton1Down:connect(function()
--- Madcity Godmode Server
-
-local Players = game:GetService("Players")
-_G.Godserver = false -- On/Off
-while wait() and _G.Godserver do
-   pcall(function()
-       for i, all in pairs(Players:GetPlayers()) do
-           local A_1 = "RevivePlayer"
-           local A_2 = game:GetService("Workspace")[all.Name]
-           local A_3 = game:GetService("Workspace").ObjectSelection.DownedPart.DownedPart
-           local Event = game:GetService("ReplicatedStorage").Event
-           Event:FireServer(A_1, A_2, A_3)
-       end
-   end)
+	end)
 end
-end)
-b_stuff.MouseButton1Down:connect(function()
--- Madcity Godmode (LocalPlayer)
+coroutine.wrap(ZRLV_fake_script)()
+local function BAMBFIU_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
 
-local this_guy_has_godmode = game.Players.LocalPlayer.Name
-_G.God = false -- On/Off
-while _G.God and wait() do
-       pcall(function()
-           local A_1 = "RevivePlayer"
-           local A_2 = game:GetService("Workspace")[this_guy_has_godmode]
-           local A_3 = game:GetService("Workspace").ObjectSelection.DownedPart.DownedPart
-           local Event = game:GetService("ReplicatedStorage").Event
-           Event:FireServer(A_1, A_2, A_3)
-           end)
+	script.Parent.MouseButton1Click:Connect(function()
+	    game.ReplicatedStorage.RemoteEvents.BuyItem:FireServer("Pan", 0)
+	    
+	end)
 end
-end)
+coroutine.wrap(BAMBFIU_fake_script)()
+local function DHQO_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    for i,v in pairs(game.Workspace.BadGuys:GetChildren()) do
+	
+	        for i = 1, 50 do
+	
+	            game:GetService("ReplicatedStorage").RemoteEvents.HitBadguy:FireServer(v,10)
+	            game:GetService("ReplicatedStorage").RemoteEvents.HitBadguy:FireServer(v,996)
+	            game:GetService("ReplicatedStorage").RemoteEvents.HitBadguy:FireServer(v,9)
+	            game:GetService("ReplicatedStorage").RemoteEvents.HitBadguy:FireServer(v,996)
+	
+	        end
+	
+	        end
+	end)
+end
+coroutine.wrap(DHQO_fake_script)()
+local function FJYXQET_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	if workspace:findFirstChild("CodeNote") then
+	game.ReplicatedStorage.RemoteEvents.Safe:FireServer(workspace.CodeNote.SurfaceGui.TextLabel.Text)
+	end
+	end)
+end
+
+coroutine.wrap(FKRBDAC_fake_script)()
 
 end)
 
