@@ -90,11 +90,11 @@ MH.BackgroundTransparency = 0.750
 MH.Position = UDim2.new(-3.21008265e-05, 0, 0.251804382, 0)
 MH.Size = UDim2.new(0, 177, 0, 28)
 MH.Font = Enum.Font.Arcade
-MH.Text = "Jayhub"
+MH.Text = "BaconLords"
 MH.TextColor3 = Color3.fromRGB(0, 0, 0)
 MH.TextSize = 14.000
 MH.MouseButton1Click:connect(function()
-loadstring(game:HttpGet("https://jack1214060.xyz/jayhub",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BaconLords/Random-Shit/main/MAD%20cITY"))()
 end)
 
 ML.Name = "ML"
@@ -132,7 +132,7 @@ MMLabel.BackgroundTransparency = 0.850
 MMLabel.Position = UDim2.new(-0.000162415585, 0, -0.00081789738, 0)
 MMLabel.Size = UDim2.new(0, 177, 0, 27)
 MMLabel.Font = Enum.Font.Arcade
-MMLabel.Text = "Mode Manager v4.1"
+MMLabel.Text = "Mode Manager v4.2"
 MMLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 MMLabel.TextSize = 14.000
 
