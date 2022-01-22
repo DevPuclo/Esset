@@ -104,7 +104,7 @@ ML.BackgroundTransparency = 0.750
 ML.Position = UDim2.new(0, 0, 0.152069867, 0)
 ML.Size = UDim2.new(0, 177, 0, 21)
 ML.Font = Enum.Font.Arcade
-ML.Text = "Mad-Lads v7 (TP patch)"
+ML.Text = "Mad-Lads (TP patch)"
 ML.TextColor3 = Color3.fromRGB(0, 0, 0)
 ML.TextSize = 14.000
 ML.MouseButton1Click:connect(function()
