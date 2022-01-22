@@ -106,7 +106,7 @@ ML.Size = UDim2.new(0, 177, 0, 27)
 ML.Font = Enum.Font.Arcade
 ML.Text = "Mad-Lads v7 (TP patch)"
 ML.TextColor3 = Color3.fromRGB(0, 0, 0)
-ML.TextSize = 14.000
+ML.TextSize = 13.000
 ML.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DevPuclo/Mad-ladsvv7/main/README.md",true))()
 end)
