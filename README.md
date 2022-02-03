@@ -142,9 +142,17 @@ NC.BackgroundTransparency = 0.750
 NC.Position = UDim2.new(-0.00137052345, 0, 0.651128411, 0)
 NC.Size = UDim2.new(0, 177, 0, 27)
 NC.Font = Enum.Font.Arcade
-NC.Text = "Auto Farm"
+NC.Text = "Auto-rob"
 NC.TextColor3 = Color3.fromRGB(0, 0, 0)
 NC.TextSize = 14.000
 NC.MouseButton1Down:connect(function()
-loadstring(game:HttpGet('https://system-exodus.com/scripts/madcity/MadLadsAR.lua',true))()
+_G.MaxPlayers = 7 -- select the number of players on the server for teleportation
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisUsernameWasObfuscatedUsingPSUObf40A/Scripts/main/MadCityAutoRob"))()
 end)
+
+/////////
+script Auto-Rob
+_G.MaxPlayers = 7 -- select the number of players on the server for teleportation
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisUsernameWasObfuscatedUsingPSUObf40A/Scripts/main/MadCityAutoRob"))()
+///////
+loadstring(game:HttpGet('https://system-exodus.com/scripts/madcity/MadLadsAR.lua',true))()
