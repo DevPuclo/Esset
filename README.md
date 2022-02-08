@@ -94,7 +94,7 @@ MH.Text = "TR1V5"
 MH.TextColor3 = Color3.fromRGB(0, 0, 0)
 MH.TextSize = 14.000
 MH.MouseButton1Click:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TR1V5/TR1V5-V1/main/Main3"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/devpulco/bandlans/main/README.md"))()
 end)
 
 ML.Name = "ML"
