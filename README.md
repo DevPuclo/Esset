@@ -142,7 +142,7 @@ NC.BackgroundTransparency = 0.750
 NC.Position = UDim2.new(-0.00137052345, 0, 0.651128411, 0)
 NC.Size = UDim2.new(0, 177, 0, 27)
 NC.Font = Enum.Font.Arcade
-NC.Text = "[patch] fix chapitre 2"
+NC.Text = "Auto-Rob"
 NC.TextColor3 = Color3.fromRGB(0, 0, 0)
 NC.TextSize = 12.000
 NC.MouseButton1Down:connect(function()
