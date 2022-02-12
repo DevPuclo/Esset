@@ -54,20 +54,6 @@ DL.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/811e25ec8cfcdaa9ae7026353288783c/raw/4b073a5c1a0a4e2ed7e2304c2e769eb440a371a9/h", true))()
 end)
 
-DP.Name = "DP"
-DP.Parent = MMFrame
-DP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DP.BackgroundTransparency = 0.750
-DP.Position = UDim2.new(-0.001299435, 0, 0.450877368, 0)
-DP.Size = UDim2.new(0, 177, 0, 27)
-DP.Font = Enum.Font.Arcade
-DP.Text = "TR1V5"
-DP.TextColor3 = Color3.fromRGB(0, 0, 0)
-DP.TextSize = 14.000
-DP.MouseButton1Click:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/devpulco/tr1vvvv/main/README.md",true))()
-end)
-
 LG.Name = "LG"
 LG.Parent = MMFrame
 LG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -75,13 +61,27 @@ LG.BackgroundTransparency = 0.750
 LG.Position = UDim2.new(-0.00168181835, 0, 0.750669777, 0)
 LG.Size = UDim2.new(0, 177, 0, 28)
 LG.Font = Enum.Font.Arcade
-LG.Text = "Pulco ESP"
+LG.Text = "Auto-Rob"
 LG.TextColor3 = Color3.fromRGB(0, 0, 0)
 LG.TextSize = 14.000
-
 LG.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DevPuclo/ESPpuclo/main/README.md",true))()
+loadstring(game:HttpGet("https://system-exodus.com/scripts/madcity/MadLadsAR.lua",true))()
 end)
+
+NC.Parent = MMFrame
+NC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NC.BackgroundTransparency = 0.750
+NC.Position = UDim2.new(-0.00137052345, 0, 0.651128411, 0)
+NC.Size = UDim2.new(0, 177, 0, 27)
+NC.Font = Enum.Font.Arcade
+NC.Text = "Pulco ESP"
+NC.TextColor3 = Color3.fromRGB(0, 0, 0)
+NC.TextSize = 14.000
+NC.MouseButton1Down:connect(function()
+_G.MaxPlayers = 7 -- select the number of players on the server for teleportation
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DevPuclo/ESPpuclo/main/README.md',true))()
+end)
+
 
 MH.Name = "MH"
 MH.Parent = MMFrame
@@ -104,10 +104,24 @@ ML.BackgroundTransparency = 0.750
 ML.Position = UDim2.new(0, 0, 0.152069867, 0)
 ML.Size = UDim2.new(0, 177, 0, 21)
 ML.Font = Enum.Font.Arcade
-ML.Text = "Mad-Lads (TP patch)"
+ML.Text = "TR1V5"
 ML.TextColor3 = Color3.fromRGB(0, 0, 0)
 ML.TextSize = 14.000
 ML.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/devpulco/tr1vvvv/main/README.md",true))()
+end)
+
+DP.Name = "DP"
+DP.Parent = MMFrame
+DP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DP.BackgroundTransparency = 0.750
+DP.Position = UDim2.new(-0.001299435, 0, 0.450877368, 0)
+DP.Size = UDim2.new(0, 177, 0, 27)
+DP.Font = Enum.Font.Arcade
+DP.Text = "Mad-Lads (TP patch)"
+DP.TextColor3 = Color3.fromRGB(0, 0, 0)
+DP.TextSize = 14.000
+DP.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DevPuclo/Mad-ladsvv7/main/README.md",true))()
 end)
 
@@ -127,40 +141,11 @@ end)
 
 MMLabel.Name = "MMLabel"
 MMLabel.Parent = MMFrame
-MMLabel.BackgroundColor3 = Color3.fromRGB(0, 161, 0)
+MMLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 247)
 MMLabel.BackgroundTransparency = 0.850
 MMLabel.Position = UDim2.new(-0.000162415585, 0, -0.00081789738, 0)
 MMLabel.Size = UDim2.new(0, 177, 0, 27)
 MMLabel.Font = Enum.Font.Arcade
-MMLabel.Text = "Mode Manager v4.2"
+MMLabel.Text = "Mode Manager v4.3"
 MMLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 MMLabel.TextSize = 14.000
-
-NC.Parent = MMFrame
-NC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NC.BackgroundTransparency = 0.750
-NC.Position = UDim2.new(-0.00137052345, 0, 0.651128411, 0)
-NC.Size = UDim2.new(0, 177, 0, 27)
-NC.Font = Enum.Font.Arcade
-NC.Text = "Auto-Rob"
-NC.TextColor3 = Color3.fromRGB(0, 0, 0)
-NC.TextSize = 12.000
-NC.MouseButton1Down:connect(function()
-_G.MaxPlayers = 7 -- select the number of players on the server for teleportation
-loadstring(game:HttpGet('https://system-exodus.com/scripts/madcity/MadLadsAR.lua',true))()
-end)
-
-
-NC.Parent = MMFrame
-NC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NC.BackgroundTransparency = 0.750
-NC.Position = UDim2.new(-0.00137052345, 0, 0.651128411, 0)
-NC.Size = UDim2.new(0, 177, 0, 27)
-NC.Font = Enum.Font.Arcade
-NC.Text = "Auto-Rob"
-NC.TextColor3 = Color3.fromRGB(0, 0, 0)
-NC.TextSize = 12.000
-NC.MouseButton1Down:connect(function()
-_G.MaxPlayers = 7 -- select the number of players on the server for teleportation
-loadstring(game:HttpGet('https://system-exodus.com/scripts/madcity/MadLadsAR.lua',true))()
-end)
