@@ -61,11 +61,11 @@ DP.BackgroundTransparency = 0.750
 DP.Position = UDim2.new(-0.001299435, 0, 0.450877368, 0)
 DP.Size = UDim2.new(0, 177, 0, 27)
 DP.Font = Enum.Font.Arcade
-DP.Text = "Banana"
+DP.Text = "TR1V5"
 DP.TextColor3 = Color3.fromRGB(0, 0, 0)
 DP.TextSize = 14.000
 DP.MouseButton1Click:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Banana/main/BananaChicken.lua",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/devpulco/tr1vvvv/main/README.md",true))()
 end)
 
 LG.Name = "LG"
@@ -151,3 +151,16 @@ loadstring(game:HttpGet('https://system-exodus.com/scripts/madcity/MadLadsAR.lua
 end)
 
 
+NC.Parent = MMFrame
+NC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NC.BackgroundTransparency = 0.750
+NC.Position = UDim2.new(-0.00137052345, 0, 0.651128411, 0)
+NC.Size = UDim2.new(0, 177, 0, 27)
+NC.Font = Enum.Font.Arcade
+NC.Text = "Auto-Rob"
+NC.TextColor3 = Color3.fromRGB(0, 0, 0)
+NC.TextSize = 12.000
+NC.MouseButton1Down:connect(function()
+_G.MaxPlayers = 7 -- select the number of players on the server for teleportation
+loadstring(game:HttpGet('https://system-exodus.com/scripts/madcity/MadLadsAR.lua',true))()
+end)
