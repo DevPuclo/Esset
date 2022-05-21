@@ -118,11 +118,11 @@ DP.BackgroundTransparency = 0.750
 DP.Position = UDim2.new(-0.001299435, 0, 0.450877368, 0)
 DP.Size = UDim2.new(0, 177, 0, 27)
 DP.Font = Enum.Font.Arcade
-DP.Text = "Mad-Lads (TP patch)"
+DP.Text = "HoHo|hub"
 DP.TextColor3 = Color3.fromRGB(0, 0, 0)
 DP.TextSize = 14.000
 DP.MouseButton1Click:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DevPuclo/Mad-ladsvv7/main/README.md",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/devpulco/trico/main/README.md",true))()
 end)
 
 TeleQ.Parent = MMFrame
@@ -145,6 +145,6 @@ MMLabel.BackgroundTransparency = 0.850
 MMLabel.Position = UDim2.new(-0.000162415585, 0, -0.00081789738, 0)
 MMLabel.Size = UDim2.new(0, 177, 0, 27)
 MMLabel.Font = Enum.Font.Arcade
-MMLabel.Text = "Mode Manager v4.4"
+MMLabel.Text = "Mode Manager v4.5"
 MMLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 MMLabel.TextSize = 14.000
