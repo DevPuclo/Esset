@@ -145,6 +145,6 @@ MMLabel.BackgroundTransparency = 0.850
 MMLabel.Position = UDim2.new(-0.000162415585, 0, -0.00081789738, 0)
 MMLabel.Size = UDim2.new(0, 177, 0, 27)
 MMLabel.Font = Enum.Font.Arcade
-MMLabel.Text = "Mode Manager v4.5"
+MMLabel.Text = "Mode Manager v4.7"
 MMLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 MMLabel.TextSize = 14.000
