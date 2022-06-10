@@ -118,11 +118,11 @@ DP.BackgroundTransparency = 0.750
 DP.Position = UDim2.new(-0.001299435, 0, 0.450877368, 0)
 DP.Size = UDim2.new(0, 177, 0, 27)
 DP.Font = Enum.Font.Arcade
-DP.Text = "HoHo|hub"
+DP.Text = "Ruby Hub V1.3"
 DP.TextColor3 = Color3.fromRGB(0, 0, 0)
 DP.TextSize = 14.000
 DP.MouseButton1Click:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/devpulco/trico/main/README.md",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/devpulco/Ruby/main/README.md",true))()
 end)
 
 TeleQ.Parent = MMFrame
