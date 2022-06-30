@@ -161,13 +161,13 @@ TextButton_7.BorderSizePixel = 0
 TextButton_7.Position = UDim2.new(0, 0, 0.631163955, 0)
 TextButton_7.Size = UDim2.new(1, 0, 0.124845669, 0)
 TextButton_7.Font = Enum.Font.SourceSansLight
-TextButton_7.Text = "Hoho | Hub"
+TextButton_7.Text = "Mad Lads V7.1"
 TextButton_7.TextColor3 = Color3.new(1, 1, 1)
 TextButton_7.TextScaled = true
 TextButton_7.TextSize = 16
 TextButton_7.TextWrapped = true
 TextButton_7.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/devpulco/trico/main/README.md",true))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/devpulco/Mad-ladsvv7/main/README.md",true))() 
 end)
 
 
