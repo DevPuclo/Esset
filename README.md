@@ -113,13 +113,19 @@ TextButton_4.BorderSizePixel = 0
 TextButton_4.Position = UDim2.new(0, 0, 0.268807083, 0)
 TextButton_4.Size = UDim2.new(1, 0, 0.124845669, 0)
 TextButton_4.Font = Enum.Font.SourceSansLight
-TextButton_4.Text = "Destiny"
+TextButton_4.Text = "Auto Rob"
 TextButton_4.TextColor3 = Color3.new(1, 1, 1)
 TextButton_4.TextScaled = true
 TextButton_4.TextSize = 16
 TextButton_4.TextWrapped = true
 TextButton_4.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/itzRolf/Utilities/main/Mad%20City/main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Destiny/main/scripts/Mad%20City%20Chapter%202/main.lua",true))()
+
+-- Like and sub on video, its will motivation in the future for me post only pastebin scripts, thanks <3
+ 
+-- Also u can click on AdFocus link, will small income for me (i collect on gpu)
+-- AdFoc.us Link: http://adfoc.us/77080985098213
+-- Thanks so much!
 end)
 
 TextButton_5.Parent = Frame_2
